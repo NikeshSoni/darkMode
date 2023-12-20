@@ -1,0 +1,83 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-wapper{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 36, 252);
+}
+
+label{
+    width: 200px;
+    height: 100px;
+    background: antiquewhite;
+    border-radius: 48px;
+    position: relative;
+    cursor: pointer;
+}
+
+input{
+     display: none;
+}
+
+.show{
+    background-color: #0e0f0b !important;
+}
+
+ .moon-sun::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    box-shadow: inset 16px  -15px 0 0 #fff000;
+    position: absolute;
+    border-radius: 50%;
+    margin: 5px;
+   
+    transition: .5s;
+    /* overflow: hidden; */
+}
+
+#checkbox:checked +.moon-sun::before{
+    transform: translateX(100px);
+    overflow: hidden;
+    box-shadow: inset 100px 0 0 #000;
+}
+
+/* .sun{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(50, 65, 65);
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    animation: anime;
+} */
+
+/* 
+.moon-sun:hover .moon-sun::after {
+    content:'';
+    position:absolute;
+    width: 50px;
+    height: 50px;
+} */
+
+
+/* @keyframes anime {
+    0%{
+        rotate: 50%;
+    }
+    50%{
+        rotate: 100%;
+    }
+    100%{
+        rotate: 380%;
+    }
+} */
